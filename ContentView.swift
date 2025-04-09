@@ -7,11 +7,8 @@ struct ContentView: View {
     @State var answer = 5
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, j!")
+        Button("Add") {
+            answer = number1 + number2
         }
     }
 }
