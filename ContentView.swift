@@ -15,5 +15,8 @@ struct ContentView: View {
         Button("Subtract") {
             answer = number1 - number2
         }
+        Button("Multiply") {
+            answer = number1 * number2
+        }
     }
 }
