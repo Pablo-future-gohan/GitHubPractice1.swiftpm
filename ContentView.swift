@@ -29,7 +29,9 @@ struct ContentView: View {
         .background(Color(red: 0, green: 0, blue: 0.5))
 
         Button("Divide") {
-            answer = number1 / number2
+            if (number2 != 0) {
+                answer = number1 / number2
+            }
         }
         .background(Color(red: 0, green: 0, blue: 0.5))
 
