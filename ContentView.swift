@@ -8,7 +8,11 @@ struct ContentView: View {
     
     var body: some View {
         TextField("number1", value: $number1, format: .number)
+            .textFieldStyle(.roundedBorder)
+            .frame(width:250)
         TextField("number2", value: $number2, format: .number)
+            .textFieldStyle(.roundedBorder)
+            .frame(width:250)
         Button("Add") {
             answer = number1 + number2
         }
@@ -21,5 +25,6 @@ struct ContentView: View {
         Button("Divide") {
             answer = number1 / number2
         }
+        Text("\(answer)")
     }
 }
