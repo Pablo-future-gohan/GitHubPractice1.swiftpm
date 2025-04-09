@@ -16,19 +16,29 @@ struct ContentView: View {
         Button("Add") {
             answer = number1 + number2
         }
+        .background(Color(red: 0, green: 0, blue: 0.5))
+
         Button("Subtract") {
             answer = number1 - number2
         }
+        .background(Color(red: 0, green: 0, blue: 0.5))
+
         Button("Multiply") {
             answer = number1 * number2
         }
+        .background(Color(red: 0, green: 0, blue: 0.5))
+
         Button("Divide") {
             answer = number1 / number2
         }
+        .background(Color(red: 0, green: 0, blue: 0.5))
+
         Text("\(answer)")
             .font(.custom("AmericanTypewriter", size: 40))
             .bold()
             .foregroundStyle(.white)
             .shadow(color: .black, radius: 5)
+
+        
     }
 }
