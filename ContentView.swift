@@ -4,7 +4,7 @@ struct ContentView: View {
     
     @State var number1 = 0
     @State var number2 = 2;
-    @State var answer = 5
+    @State var answer = 2
     
     var body: some View {
         TextField("number1", value: $number1, format: .number)
@@ -26,5 +26,9 @@ struct ContentView: View {
             answer = number1 / number2
         }
         Text("\(answer)")
+            .font(.custom("AmericanTypewriter", size: 40))
+            .bold()
+            .foregroundStyle(.white)
+            .shadow(color: .black, radius: 5)
     }
 }
