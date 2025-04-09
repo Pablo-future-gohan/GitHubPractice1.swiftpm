@@ -7,6 +7,8 @@ struct ContentView: View {
     @State var answer = 5
     
     var body: some View {
+        TextField("number1", value: $number1, format: .number)
+        TextField("number2", value: $number2, format: .number)
         Button("Add") {
             answer = number1 + number2
         }
