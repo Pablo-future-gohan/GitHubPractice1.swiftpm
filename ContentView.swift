@@ -36,7 +36,7 @@ struct ContentView: View {
         .background(Color(red: 0, green: 0, blue: 0.5))
 
         Text("\(answer)")
-            .font(.custom("AmericanTypewriter", size: 40))
+            .font(.custom("Impact", size: 40))
             .bold()
             .foregroundStyle(.white)
             .shadow(color: .black, radius: 5)
